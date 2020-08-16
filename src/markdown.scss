@@ -1,0 +1,32 @@
+$editor-item-margin: auto;
+
+.markdown-editor {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+
+  & > .item {
+    box-sizing: border-box;
+    flex: 1 1 200px;
+    height: 100%;
+    margin: $editor-item-margin;
+    width: 100px;
+  }
+
+  & > .coder-section {
+    overflow: hidden;
+  }
+
+  & > .preview-section {
+    overflow: auto;
+  }
+
+  .coder {
+    height: 100%;
+  }
+
+  .preview {
+    padding: 1rem;
+  }
+}
